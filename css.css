@@ -1,0 +1,27 @@
+body{
+    background-image: url(background.jpg);
+}
+#man{
+    background-image: url(sprite3.jpg);
+    width: 350px;
+    height: 440px;
+    animation: walk 1s steps(4) infinite,
+                forward 5s linear infinite;
+}
+#road{
+    border-bottom: dashed 20px;
+}
+@keyframes walk {
+    0%{background-position: 0px;}
+    100%{
+        background-position: 1600px;
+    }
+}
+@keyframes forward {
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(1600px);
+    }
+}
